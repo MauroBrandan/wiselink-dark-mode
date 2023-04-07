@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Header from '@/components/Header/Header'
 import { font } from '@/utils/font'
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
+			<Header />
 			<main className={font.className}>
 				<h1>Hello World!</h1>
 			</main>
