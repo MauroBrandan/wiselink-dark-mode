@@ -21,7 +21,12 @@ const MenuMobile = () => {
 
 					<div>
 						<Navbar.CollapseItem css={{ width: '100%' }}>
-							<Button as={Link} href='#' css={{ minWidth: '100%' }}>
+							<Button
+								as={Link}
+								href='#'
+								css={{ minWidth: '100%' }}
+								color={'gradient'}
+							>
 								Registrarme
 							</Button>
 						</Navbar.CollapseItem>

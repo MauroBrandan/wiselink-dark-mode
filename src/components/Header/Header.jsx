@@ -18,7 +18,7 @@ const Header = () => {
 
 			<Navbar.Content hideIn='sm'>
 				<Navbar.Item>
-					<Button auto as={Link} href='#'>
+					<Button auto as={Link} href='#' color={'gradient'}>
 						Registrarme
 					</Button>
 				</Navbar.Item>

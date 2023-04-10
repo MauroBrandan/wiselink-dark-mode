@@ -27,7 +27,7 @@ const Section = ({ image, imageAlt, title, content, callToAction1, callToAction2
 					</Row>
 					<Spacer y={1} />
 					<Row>
-						<Button auto as={Link} href='#'>
+						<Button auto as={Link} href='#' color={'gradient'}>
 							{callToAction1}
 						</Button>
 						<Button auto light as={Link} href='#'>
