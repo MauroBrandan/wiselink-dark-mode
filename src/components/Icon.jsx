@@ -1,16 +1,17 @@
 import Image from 'next/image'
 import { Card } from '@nextui-org/react'
 
-const Icon = ({ src, alt }) => {
+const Icon = ({ src, alt, border }) => {
 	return (
 		<Card
-			variant='bordered'
+			variant={border ? 'bordered' : 'flat'}
 			css={{
 				display: 'flex',
 				width: '80px',
 				height: '80px',
 				justifyContent: 'center',
 				alignItems: 'center',
+				bg: 'transparent',
 			}}
 		>
 			<Card.Body css={{ overflow: 'hidden' }}>
