@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { Card } from '@nextui-org/react'
 
-const Icon = ({ src, alt, border }) => {
+const Icon = ({ src, alt, border, size }) => {
 	return (
 		<Card
 			variant={border ? 'bordered' : 'flat'}
@@ -15,7 +15,7 @@ const Icon = ({ src, alt, border }) => {
 			}}
 		>
 			<Card.Body css={{ overflow: 'hidden' }}>
-				<Image src={src} alt={alt} width={50} height={50} />
+				<Image src={src} alt={alt} width={size ?? 'auto'} height={size ?? 'auto'} />
 			</Card.Body>
 		</Card>
 	)

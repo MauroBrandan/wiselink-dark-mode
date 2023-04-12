@@ -8,7 +8,7 @@ const FeatureCard = ({ src, alt, label }) => {
 			variant='bordered'
 		>
 			<Card.Header css={{ justifyContent: 'center' }}>
-				<Icon src={src} alt={alt} />
+				<Icon src={src} alt={alt} size={50} />
 			</Card.Header>
 			<Card.Body css={{ py: '$2', textAlign: 'center' }}>
 				<Text>{label}</Text>
