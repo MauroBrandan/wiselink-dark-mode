@@ -9,12 +9,12 @@ const BulletPoint = ({ text }) => {
 				<Image src={checkIcon} alt='check icon' width={25} height={25} />
 				<Text size='inherit'>{text}</Text>
 			</div>
-			<style>{`
-				.bullet-point{
+			<style jsx>{`
+				.bullet-point {
 					display: flex;
 					align-items: center;
 					gap: 12px;
-					margin: 12px 0; 
+					margin: 12px 0;
 				}
 			`}</style>
 		</>
