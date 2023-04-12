@@ -26,6 +26,8 @@ const MenuMobile = () => {
 								href='#'
 								css={{ minWidth: '100%' }}
 								color={'gradient'}
+								shadow
+								bordered
 							>
 								Registrarme
 							</Button>

@@ -1,6 +1,6 @@
 import { Navbar, Button, Link } from '@nextui-org/react'
 import { font } from '@/utils/font'
-import Logo from '../Logo'
+import Logo from './Logo'
 import MenuMobile from './MenuMobile'
 
 const Header = () => {
@@ -18,7 +18,7 @@ const Header = () => {
 
 			<Navbar.Content hideIn='sm'>
 				<Navbar.Item>
-					<Button auto as={Link} href='#' color={'gradient'}>
+					<Button auto as={Link} href='#' bordered color={'gradient'}>
 						Registrarme
 					</Button>
 				</Navbar.Item>
