@@ -1,0 +1,8 @@
+export { default as Hero } from './Hero'
+export { default as Features } from './Features'
+export { default as CommercialAttentions } from './CommercialAttentions'
+export { default as Points } from './Points'
+export { default as Sales } from './Sales'
+export { default as CloudFeatures } from './CloudFeatures'
+export { default as Metrics } from './Metrics'
+export { default as Contact } from './Contact'

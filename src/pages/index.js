@@ -1,7 +1,16 @@
 import Head from 'next/head'
-import Header from '@/components/Header/Header'
 import { font } from '@/utils/font'
-import Hero from '@/sections/Hero'
+import Header from '@/components/Header'
+import {
+	Hero,
+	Features,
+	CommercialAttentions,
+	Points,
+	Sales,
+	CloudFeatures,
+	Metrics,
+	Contact,
+} from '@/sections'
 
 export default function Home() {
 	return (
@@ -16,6 +25,13 @@ export default function Home() {
 			<Header />
 			<main className={font.className}>
 				<Hero />
+				<Features />
+				<CommercialAttentions />
+				<Points />
+				<Sales />
+				<CloudFeatures />
+				<Metrics />
+				<Contact />
 			</main>
 		</>
 	)
