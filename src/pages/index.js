@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { font } from '@/utils/font'
 import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import {
 	Hero,
 	Features,
@@ -33,6 +34,7 @@ export default function Home() {
 				<Metrics />
 				<Contact />
 			</main>
+			<Footer />
 		</>
 	)
 }
