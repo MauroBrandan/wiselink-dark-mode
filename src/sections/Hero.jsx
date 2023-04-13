@@ -12,6 +12,8 @@ export default function Hero() {
 			}
 			callToAction1={'Registrarme'}
 			callToAction2={'Iniciar sesión'}
+			blob
+			blobRight
 		/>
 	)
 }

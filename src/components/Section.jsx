@@ -1,13 +1,17 @@
 import Image from 'next/image'
 import { Container, Row, Text, Col, Spacer, Button, Link } from '@nextui-org/react'
 import { useMediaQuery } from '@/utils/useMediaQuery'
+import Blob from './Blob'
 
-const Section = ({ image, imageAlt, title, content, callToAction1, callToAction2 }) => {
+const Section = ({ image, imageAlt, title, content, callToAction1, callToAction2, blob, blobRight }) => {
 	const isMd = useMediaQuery(960)
 	const isS = useMediaQuery(650)
 
 	return (
-		<Container gap={0} lg css={isS ? '' : { mt: '$52', mb: '$52' }} as='section'>
+		<>
+			{blob && <Blob right={blobRight} />}
+			
+			<Container gap={0} lg css={isS ? '' : { mt: '$52', mb: '$52' }} as='section'>
 			<Row gap={2} wrap={isMd ? 'wrap' : 'nowrap'}>
 				<Col>
 					<Image src={image} alt={imageAlt} style={{ objectFit: 'contain' }} />
@@ -44,6 +48,7 @@ const Section = ({ image, imageAlt, title, content, callToAction1, callToAction2
 				</Col>
 			</Row>
 		</Container>
+		</>
 	)
 }
 

@@ -1,6 +1,7 @@
 import { Grid, Text } from '@nextui-org/react'
 import { useMediaQuery } from '@/utils/useMediaQuery'
 import FeatureCard from '@/components/FeatureCard'
+import Blob from '@/components/Blob'
 import teamIcon from '../../public/icons/team-icon.svg'
 import lightIcon from '../../public/icons/light-icon.svg'
 import leadIcon from '../../public/icons/lead-icon.svg'
@@ -57,17 +58,21 @@ export default function CloudFeatures() {
 	const isS = useMediaQuery(650)
 
 	return (
-		<section style={{ marginTop: '64px' }}>
-			<Text h2 size={isS ? '$2xl' : '$5xl'} css={{ textAlign: 'center' }}>
-				El poder de un CRM en la nube
-			</Text>
-			<Grid.Container css={{ marginTop: '32px' }}>
-				{features.map(({ icon, alt, label }, index) => (
-					<Grid sm={3} xs={6} justify='center' key={index}>
-						<FeatureCard src={icon} alt={alt} label={label} />
-					</Grid>
-				))}
-			</Grid.Container>
-		</section>
+		<>
+			<Blob />
+
+			<section style={{ marginTop: '64px' }}>
+				<Text h2 size={isS ? '$2xl' : '$5xl'} css={{ textAlign: 'center' }}>
+					El poder de un CRM en la nube
+				</Text>
+				<Grid.Container css={{ marginTop: '32px' }}>
+					{features.map(({ icon, alt, label }, index) => (
+						<Grid sm={3} xs={6} justify='center' key={index}>
+							<FeatureCard src={icon} alt={alt} label={label} />
+						</Grid>
+					))}
+				</Grid.Container>
+			</section>
+		</>
 	)
 }

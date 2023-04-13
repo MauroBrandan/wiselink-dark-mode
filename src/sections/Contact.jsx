@@ -12,6 +12,8 @@ export default function Contact() {
 			}
 			callToAction1={'📅 Agendar una reunión'}
 			callToAction2={'Registrarme'}
+			blob
+			blobRight
 		/>
 	)
 }

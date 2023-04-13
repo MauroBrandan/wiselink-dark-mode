@@ -11,6 +11,8 @@ export default function Sales() {
 				'Realizá un correcto seguimiento de tus relaciones comerciales, mantenete en contacto con tus clientes en todo momento y no pierdas la oportunidad de cerrar una venta.'
 			}
 			callToAction1={'Comenzar'}
+			blob
+			blobRight
 		/>
 	)
 }
